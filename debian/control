@@ -1,22 +1,44 @@
 Source: adept
 Priority: optional
 Maintainer: Ippei Obayashi <ohai@kmc.gr.jp>
-Build-Depends: debhelper (>= 9), autotools-dev
+Build-Depends: debhelper (>= 9), autotools-dev, g++, build-essential
 Standards-Version: 3.9.6
 Section: libs
-Homepage: <insert the upstream URL, if relevant>
-#Vcs-Git: git://anonscm.debian.org/collab-maint/adept.git
-#Vcs-Browser: https://anonscm.debian.org/gitweb/?p=collab-maint/adept.git;a=summary
+Homepage: http://www.met.reading.ac.uk/clouds/adept/
 
-Package: adept-dev
+Package: libadept-dev
 Section: libdevel
 Architecture: any
-Depends: adeptBROKEN (= ${binary:Version}), ${misc:Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Depends: libadept0 (= ${binary:Version}), ${misc:Depends}
+Description: A fast automatic differentiation library for C++ (development files)
+ Adept (Automatic Differentiation using Expression Templates)
+ is a software library that enables algorithms written in C and C++
+ to be automatically differentiated. It uses an operator overloading approach,
+ so very little code modification is required.
+ Differentiation can be performed in forward mode, reverse mode
+ (to compute the adjoint), or the full Jacobian matrix can be computed. 
+ Moreover, the way that expression templates have been used and several other
+ important optimizations mean that reverse-mode differentiation is significantly
+ faster than other libraries that provide equivalent functionality
+ (ADOL-C, CppAD and Sacado) and less memory is used.
+ In fact, Adept is also often only around 10-25% slower than an adjoint code
+ you might write by hand, but immeasurably faster in terms of user time;
+ adjoint coding is very time consuming and error-prone.
 
-Package: adeptBROKEN
+Package: libadept0
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Description: A fast automatic differentiation library for C++
+ Adept (Automatic Differentiation using Expression Templates)
+ is a software library that enables algorithms written in C and C++
+ to be automatically differentiated. It uses an operator overloading approach,
+ so very little code modification is required.
+ Differentiation can be performed in forward mode, reverse mode
+ (to compute the adjoint), or the full Jacobian matrix can be computed. 
+ Moreover, the way that expression templates have been used and several other
+ important optimizations mean that reverse-mode differentiation is significantly
+ faster than other libraries that provide equivalent functionality
+ (ADOL-C, CppAD and Sacado) and less memory is used.
+ In fact, Adept is also often only around 10-25% slower than an adjoint code
+ you might write by hand, but immeasurably faster in terms of user time;
+ adjoint coding is very time consuming and error-prone.
