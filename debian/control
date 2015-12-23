@@ -1,7 +1,7 @@
 Source: adept
 Priority: optional
 Maintainer: Ippei Obayashi <ohai@kmc.gr.jp>
-Build-Depends: debhelper (>= 9), autotools-dev, g++, build-essential
+Build-Depends: debhelper (>= 9), autotools-dev
 Standards-Version: 3.9.6
 Section: libs
 Homepage: http://www.met.reading.ac.uk/clouds/adept/
