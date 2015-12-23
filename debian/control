@@ -1,0 +1,22 @@
+Source: adept
+Priority: optional
+Maintainer: Ippei Obayashi <ohai@kmc.gr.jp>
+Build-Depends: debhelper (>= 9), autotools-dev
+Standards-Version: 3.9.6
+Section: libs
+Homepage: <insert the upstream URL, if relevant>
+#Vcs-Git: git://anonscm.debian.org/collab-maint/adept.git
+#Vcs-Browser: https://anonscm.debian.org/gitweb/?p=collab-maint/adept.git;a=summary
+
+Package: adept-dev
+Section: libdevel
+Architecture: any
+Depends: adeptBROKEN (= ${binary:Version}), ${misc:Depends}
+Description: <insert up to 60 chars description>
+ <insert long description, indented with spaces>
+
+Package: adeptBROKEN
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: <insert up to 60 chars description>
+ <insert long description, indented with spaces>
