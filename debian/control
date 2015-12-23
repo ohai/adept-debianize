@@ -10,7 +10,7 @@ Package: libadept-dev
 Section: libdevel
 Architecture: any
 Depends: libadept0 (= ${binary:Version}), ${misc:Depends}
-Description: A fast automatic differentiation library for C++ (development files)
+Description: Fast automatic differentiation library for C++ (development files)
  Adept (Automatic Differentiation using Expression Templates)
  is a software library that enables algorithms written in C and C++
  to be automatically differentiated. It uses an operator overloading approach,
@@ -28,7 +28,7 @@ Description: A fast automatic differentiation library for C++ (development files
 Package: libadept0
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: A fast automatic differentiation library for C++
+Description: Fast automatic differentiation library for C++
  Adept (Automatic Differentiation using Expression Templates)
  is a software library that enables algorithms written in C and C++
  to be automatically differentiated. It uses an operator overloading approach,
